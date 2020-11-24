@@ -11,6 +11,7 @@ library(tidyverse)
 ```
 
 ```{r}
-ggplot(data = storms, aes(x = pressure, y = wind)) + geom_hex()
+ggplot(data = storms, aes(x = pressure, y = wind)) + geom_hex()+
+  scale_fill_gradient(low = "black", high = "magenta")
 ```
 
